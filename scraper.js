@@ -25,11 +25,9 @@ puppeteer
   .then(function(html) {
     $('.togglesWrap_Zsi > article > p', html).each(function() {
       questions.push($(this).text());
-      // console.log($(this).text());
       });
     $('.togglesWrap_Zsi > article > div > div', html).each(function() {
       answers.push($(this).text());
-      // console.log($(this).text());
       });
     })
   	.then(function() {
